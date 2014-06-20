@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD29ABD21954D9E100E3EDB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29ABD11954D9E100E3EDB4 /* Foundation.framework */; };
+		BD29ABD41954D9E100E3EDB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29ABD31954D9E100E3EDB4 /* CoreGraphics.framework */; };
+		BD29ABD61954D9E100E3EDB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29ABD51954D9E100E3EDB4 /* UIKit.framework */; };
+		BD29ABDC1954D9E100E3EDB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD29ABDA1954D9E100E3EDB4 /* InfoPlist.strings */; };
+		BD29ABDE1954D9E100E3EDB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD29ABDD1954D9E100E3EDB4 /* main.m */; };
+		BD29ABE21954D9E100E3EDB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD29ABE11954D9E100E3EDB4 /* AppDelegate.m */; };
+		BD29ABE41954D9E200E3EDB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD29ABE31954D9E200E3EDB4 /* Images.xcassets */; };
+		BD29ABEB1954D9E200E3EDB4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29ABEA1954D9E200E3EDB4 /* XCTest.framework */; };
+		BD29ABEC1954D9E200E3EDB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29ABD11954D9E100E3EDB4 /* Foundation.framework */; };
+		BD29ABED1954D9E200E3EDB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29ABD51954D9E100E3EDB4 /* UIKit.framework */; };
+		BD29ABF51954D9E200E3EDB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD29ABF31954D9E200E3EDB4 /* InfoPlist.strings */; };
+		BD29ABF71954D9E200E3EDB4 /* eBayProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD29ABF61954D9E200E3EDB4 /* eBayProjectTests.m */; };
+		BD29AC021954DA3D00E3EDB4 /* StocksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD29AC011954DA3C00E3EDB4 /* StocksTableViewController.m */; };
+		BD29AC051954DB2000E3EDB4 /* StocksTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD29AC041954DB2000E3EDB4 /* StocksTableViewCell.m */; };
+		BD29AC081954DB4300E3EDB4 /* Stock.m in Sources */ = {isa = PBXBuildFile; fileRef = BD29AC071954DB4300E3EDB4 /* Stock.m */; };
+		BD29AC481954E2BA00E3EDB4 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = BD29AC471954E2BA00E3EDB4 /* Database.m */; };
+		BD29AC4C1954E35200E3EDB4 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29AC4A1954E35200E3EDB4 /* libsqlite3.dylib */; };
+		BD29AC501954E44300E3EDB4 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29AC4F1954E44300E3EDB4 /* DropboxSDK.framework */; };
+		BD29AC531954E75E00E3EDB4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29AC521954E75E00E3EDB4 /* QuartzCore.framework */; };
+		BD29AC551954E76700E3EDB4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29AC541954E76700E3EDB4 /* Security.framework */; };
+		BD29AC571954E79F00E3EDB4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29AC491954E35200E3EDB4 /* libsqlite3.0.dylib */; };
+		BD29AC5A1954E8A400E3EDB4 /* userLocation.db in Resources */ = {isa = PBXBuildFile; fileRef = BD29AC591954E8A400E3EDB4 /* userLocation.db */; };
+		BD29AC5D1954EEDD00E3EDB4 /* libCustomStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29AC5C1954EEDD00E3EDB4 /* libCustomStaticLibrary.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD29ABEE1954D9E200E3EDB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD29ABC61954D9E100E3EDB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD29ABCD1954D9E100E3EDB4;
+			remoteInfo = eBayProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD29ABCE1954D9E100E3EDB4 /* eBayProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBayProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD29ABD11954D9E100E3EDB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BD29ABD31954D9E100E3EDB4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BD29ABD51954D9E100E3EDB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BD29ABD91954D9E100E3EDB4 /* eBayProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "eBayProject-Info.plist"; sourceTree = "<group>"; };
+		BD29ABDB1954D9E100E3EDB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BD29ABDD1954D9E100E3EDB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD29ABDF1954D9E100E3EDB4 /* eBayProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "eBayProject-Prefix.pch"; sourceTree = "<group>"; };
+		BD29ABE01954D9E100E3EDB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BD29ABE11954D9E100E3EDB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BD29ABE31954D9E200E3EDB4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BD29ABE91954D9E200E3EDB4 /* eBayProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eBayProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD29ABEA1954D9E200E3EDB4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BD29ABF21954D9E200E3EDB4 /* eBayProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "eBayProjectTests-Info.plist"; sourceTree = "<group>"; };
+		BD29ABF41954D9E200E3EDB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BD29ABF61954D9E200E3EDB4 /* eBayProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eBayProjectTests.m; sourceTree = "<group>"; };
+		BD29AC001954DA3C00E3EDB4 /* StocksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StocksTableViewController.h; sourceTree = "<group>"; };
+		BD29AC011954DA3C00E3EDB4 /* StocksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StocksTableViewController.m; sourceTree = "<group>"; };
+		BD29AC031954DB2000E3EDB4 /* StocksTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StocksTableViewCell.h; sourceTree = "<group>"; };
+		BD29AC041954DB2000E3EDB4 /* StocksTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StocksTableViewCell.m; sourceTree = "<group>"; };
+		BD29AC061954DB4300E3EDB4 /* Stock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stock.h; sourceTree = "<group>"; };
+		BD29AC071954DB4300E3EDB4 /* Stock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stock.m; sourceTree = "<group>"; };
+		BD29AC431954E28D00E3EDB4 /* CustomStaticLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomStaticLibrary.h; sourceTree = "<group>"; };
+		BD29AC461954E2BA00E3EDB4 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Database.h; path = ../Database.h; sourceTree = "<group>"; };
+		BD29AC471954E2BA00E3EDB4 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Database.m; path = ../Database.m; sourceTree = "<group>"; };
+		BD29AC491954E35200E3EDB4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		BD29AC4A1954E35200E3EDB4 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		BD29AC4F1954E44300E3EDB4 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxSDK.framework; path = eBayProject/DropboxSDK.framework; sourceTree = "<group>"; };
+		BD29AC521954E75E00E3EDB4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BD29AC541954E76700E3EDB4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BD29AC591954E8A400E3EDB4 /* userLocation.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = userLocation.db; sourceTree = "<group>"; };
+		BD29AC5C1954EEDD00E3EDB4 /* libCustomStaticLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCustomStaticLibrary.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD29ABCB1954D9E100E3EDB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD29AC571954E79F00E3EDB4 /* libsqlite3.0.dylib in Frameworks */,
+				BD29AC5D1954EEDD00E3EDB4 /* libCustomStaticLibrary.a in Frameworks */,
+				BD29AC551954E76700E3EDB4 /* Security.framework in Frameworks */,
+				BD29AC531954E75E00E3EDB4 /* QuartzCore.framework in Frameworks */,
+				BD29AC4C1954E35200E3EDB4 /* libsqlite3.dylib in Frameworks */,
+				BD29AC501954E44300E3EDB4 /* DropboxSDK.framework in Frameworks */,
+				BD29ABD41954D9E100E3EDB4 /* CoreGraphics.framework in Frameworks */,
+				BD29ABD61954D9E100E3EDB4 /* UIKit.framework in Frameworks */,
+				BD29ABD21954D9E100E3EDB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD29ABE61954D9E200E3EDB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD29ABEB1954D9E200E3EDB4 /* XCTest.framework in Frameworks */,
+				BD29ABED1954D9E200E3EDB4 /* UIKit.framework in Frameworks */,
+				BD29ABEC1954D9E200E3EDB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD29ABC51954D9E100E3EDB4 = {
+			isa = PBXGroup;
+			children = (
+				BD29ABD71954D9E100E3EDB4 /* eBayProject */,
+				BD29ABF01954D9E200E3EDB4 /* eBayProjectTests */,
+				BD29ABD01954D9E100E3EDB4 /* Frameworks */,
+				BD29ABCF1954D9E100E3EDB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD29ABCF1954D9E100E3EDB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD29ABCE1954D9E100E3EDB4 /* eBayProject.app */,
+				BD29ABE91954D9E200E3EDB4 /* eBayProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD29ABD01954D9E100E3EDB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD29AC5C1954EEDD00E3EDB4 /* libCustomStaticLibrary.a */,
+				BD29AC4F1954E44300E3EDB4 /* DropboxSDK.framework */,
+				BD29AC541954E76700E3EDB4 /* Security.framework */,
+				BD29AC521954E75E00E3EDB4 /* QuartzCore.framework */,
+				BD29AC491954E35200E3EDB4 /* libsqlite3.0.dylib */,
+				BD29AC4A1954E35200E3EDB4 /* libsqlite3.dylib */,
+				BD29ABD11954D9E100E3EDB4 /* Foundation.framework */,
+				BD29ABD31954D9E100E3EDB4 /* CoreGraphics.framework */,
+				BD29ABD51954D9E100E3EDB4 /* UIKit.framework */,
+				BD29ABEA1954D9E200E3EDB4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD29ABD71954D9E100E3EDB4 /* eBayProject */ = {
+			isa = PBXGroup;
+			children = (
+				BD29AC411954E28D00E3EDB4 /* CustomStaticLibrary */,
+				BD29AC511954E69F00E3EDB4 /* Database */,
+				BD29ABE01954D9E100E3EDB4 /* AppDelegate.h */,
+				BD29ABE11954D9E100E3EDB4 /* AppDelegate.m */,
+				BD29AC001954DA3C00E3EDB4 /* StocksTableViewController.h */,
+				BD29AC011954DA3C00E3EDB4 /* StocksTableViewController.m */,
+				BD29AC031954DB2000E3EDB4 /* StocksTableViewCell.h */,
+				BD29AC041954DB2000E3EDB4 /* StocksTableViewCell.m */,
+				BD29AC061954DB4300E3EDB4 /* Stock.h */,
+				BD29AC071954DB4300E3EDB4 /* Stock.m */,
+				BD29ABE31954D9E200E3EDB4 /* Images.xcassets */,
+				BD29ABD81954D9E100E3EDB4 /* Supporting Files */,
+			);
+			path = eBayProject;
+			sourceTree = "<group>";
+		};
+		BD29ABD81954D9E100E3EDB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD29ABD91954D9E100E3EDB4 /* eBayProject-Info.plist */,
+				BD29ABDA1954D9E100E3EDB4 /* InfoPlist.strings */,
+				BD29ABDD1954D9E100E3EDB4 /* main.m */,
+				BD29ABDF1954D9E100E3EDB4 /* eBayProject-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD29ABF01954D9E200E3EDB4 /* eBayProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD29ABF61954D9E200E3EDB4 /* eBayProjectTests.m */,
+				BD29ABF11954D9E200E3EDB4 /* Supporting Files */,
+			);
+			path = eBayProjectTests;
+			sourceTree = "<group>";
+		};
+		BD29ABF11954D9E200E3EDB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD29ABF21954D9E200E3EDB4 /* eBayProjectTests-Info.plist */,
+				BD29ABF31954D9E200E3EDB4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD29AC411954E28D00E3EDB4 /* CustomStaticLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				BD29AC431954E28D00E3EDB4 /* CustomStaticLibrary.h */,
+			);
+			path = CustomStaticLibrary;
+			sourceTree = "<group>";
+		};
+		BD29AC511954E69F00E3EDB4 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				BD29AC591954E8A400E3EDB4 /* userLocation.db */,
+				BD29AC461954E2BA00E3EDB4 /* Database.h */,
+				BD29AC471954E2BA00E3EDB4 /* Database.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD29ABCD1954D9E100E3EDB4 /* eBayProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD29ABFA1954D9E200E3EDB4 /* Build configuration list for PBXNativeTarget "eBayProject" */;
+			buildPhases = (
+				BD29ABCA1954D9E100E3EDB4 /* Sources */,
+				BD29ABCB1954D9E100E3EDB4 /* Frameworks */,
+				BD29ABCC1954D9E100E3EDB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eBayProject;
+			productName = eBayProject;
+			productReference = BD29ABCE1954D9E100E3EDB4 /* eBayProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD29ABE81954D9E200E3EDB4 /* eBayProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD29ABFD1954D9E200E3EDB4 /* Build configuration list for PBXNativeTarget "eBayProjectTests" */;
+			buildPhases = (
+				BD29ABE51954D9E200E3EDB4 /* Sources */,
+				BD29ABE61954D9E200E3EDB4 /* Frameworks */,
+				BD29ABE71954D9E200E3EDB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD29ABEF1954D9E200E3EDB4 /* PBXTargetDependency */,
+			);
+			name = eBayProjectTests;
+			productName = eBayProjectTests;
+			productReference = BD29ABE91954D9E200E3EDB4 /* eBayProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD29ABC61954D9E100E3EDB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Rohan Aurora";
+				TargetAttributes = {
+					BD29ABE81954D9E200E3EDB4 = {
+						TestTargetID = BD29ABCD1954D9E100E3EDB4;
+					};
+				};
+			};
+			buildConfigurationList = BD29ABC91954D9E100E3EDB4 /* Build configuration list for PBXProject "eBayProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BD29ABC51954D9E100E3EDB4;
+			productRefGroup = BD29ABCF1954D9E100E3EDB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD29ABCD1954D9E100E3EDB4 /* eBayProject */,
+				BD29ABE81954D9E200E3EDB4 /* eBayProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD29ABCC1954D9E100E3EDB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD29ABDC1954D9E100E3EDB4 /* InfoPlist.strings in Resources */,
+				BD29ABE41954D9E200E3EDB4 /* Images.xcassets in Resources */,
+				BD29AC5A1954E8A400E3EDB4 /* userLocation.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD29ABE71954D9E200E3EDB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD29ABF51954D9E200E3EDB4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD29ABCA1954D9E100E3EDB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD29ABE21954D9E100E3EDB4 /* AppDelegate.m in Sources */,
+				BD29ABDE1954D9E100E3EDB4 /* main.m in Sources */,
+				BD29AC051954DB2000E3EDB4 /* StocksTableViewCell.m in Sources */,
+				BD29AC021954DA3D00E3EDB4 /* StocksTableViewController.m in Sources */,
+				BD29AC481954E2BA00E3EDB4 /* Database.m in Sources */,
+				BD29AC081954DB4300E3EDB4 /* Stock.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD29ABE51954D9E200E3EDB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD29ABF71954D9E200E3EDB4 /* eBayProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD29ABEF1954D9E200E3EDB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD29ABCD1954D9E100E3EDB4 /* eBayProject */;
+			targetProxy = BD29ABEE1954D9E200E3EDB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD29ABDA1954D9E100E3EDB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD29ABDB1954D9E100E3EDB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BD29ABF31954D9E200E3EDB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD29ABF41954D9E200E3EDB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD29ABF81954D9E200E3EDB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BD29ABF91954D9E200E3EDB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD29ABFB1954D9E200E3EDB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/rohanaurora/Desktop,
+					"$(PROJECT_DIR)/eBayProject",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eBayProject/eBayProject-Prefix.pch";
+				INFOPLIST_FILE = "eBayProject/eBayProject-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/eBayProject",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv6;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BD29ABFC1954D9E200E3EDB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/rohanaurora/Desktop,
+					"$(PROJECT_DIR)/eBayProject",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eBayProject/eBayProject-Prefix.pch";
+				INFOPLIST_FILE = "eBayProject/eBayProject-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/eBayProject",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BD29ABFE1954D9E200E3EDB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/eBayProject.app/eBayProject";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eBayProject/eBayProject-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "eBayProjectTests/eBayProjectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BD29ABFF1954D9E200E3EDB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/eBayProject.app/eBayProject";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "eBayProject/eBayProject-Prefix.pch";
+				INFOPLIST_FILE = "eBayProjectTests/eBayProjectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD29ABC91954D9E100E3EDB4 /* Build configuration list for PBXProject "eBayProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD29ABF81954D9E200E3EDB4 /* Debug */,
+				BD29ABF91954D9E200E3EDB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD29ABFA1954D9E200E3EDB4 /* Build configuration list for PBXNativeTarget "eBayProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD29ABFB1954D9E200E3EDB4 /* Debug */,
+				BD29ABFC1954D9E200E3EDB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD29ABFD1954D9E200E3EDB4 /* Build configuration list for PBXNativeTarget "eBayProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD29ABFE1954D9E200E3EDB4 /* Debug */,
+				BD29ABFF1954D9E200E3EDB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD29ABC61954D9E100E3EDB4 /* Project object */;
+}
