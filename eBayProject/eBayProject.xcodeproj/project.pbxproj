@@ -30,6 +30,7 @@
 		BD29AC571954E79F00E3EDB4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29AC491954E35200E3EDB4 /* libsqlite3.0.dylib */; };
 		BD29AC5A1954E8A400E3EDB4 /* userLocation.db in Resources */ = {isa = PBXBuildFile; fileRef = BD29AC591954E8A400E3EDB4 /* userLocation.db */; };
 		BD29AC5D1954EEDD00E3EDB4 /* libCustomStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29AC5C1954EEDD00E3EDB4 /* libCustomStaticLibrary.a */; };
+		BD41C3101955F33B00FE0F50 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD41C30F1955F33B00FE0F50 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		BD29AC541954E76700E3EDB4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BD29AC591954E8A400E3EDB4 /* userLocation.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = userLocation.db; sourceTree = "<group>"; };
 		BD29AC5C1954EEDD00E3EDB4 /* libCustomStaticLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCustomStaticLibrary.a; sourceTree = "<group>"; };
+		BD41C30F1955F33B00FE0F50 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD41C3101955F33B00FE0F50 /* CoreLocation.framework in Frameworks */,
 				BD29AC571954E79F00E3EDB4 /* libsqlite3.0.dylib in Frameworks */,
 				BD29AC5D1954EEDD00E3EDB4 /* libCustomStaticLibrary.a in Frameworks */,
 				BD29AC551954E76700E3EDB4 /* Security.framework in Frameworks */,
@@ -129,12 +132,13 @@
 		BD29ABD01954D9E100E3EDB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD41C30F1955F33B00FE0F50 /* CoreLocation.framework */,
+				BD29AC491954E35200E3EDB4 /* libsqlite3.0.dylib */,
+				BD29AC4A1954E35200E3EDB4 /* libsqlite3.dylib */,
 				BD29AC5C1954EEDD00E3EDB4 /* libCustomStaticLibrary.a */,
 				BD29AC4F1954E44300E3EDB4 /* DropboxSDK.framework */,
 				BD29AC541954E76700E3EDB4 /* Security.framework */,
 				BD29AC521954E75E00E3EDB4 /* QuartzCore.framework */,
-				BD29AC491954E35200E3EDB4 /* libsqlite3.0.dylib */,
-				BD29AC4A1954E35200E3EDB4 /* libsqlite3.dylib */,
 				BD29ABD11954D9E100E3EDB4 /* Foundation.framework */,
 				BD29ABD31954D9E100E3EDB4 /* CoreGraphics.framework */,
 				BD29ABD51954D9E100E3EDB4 /* UIKit.framework */,
@@ -442,7 +446,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = armv6;
+				VALID_ARCHS = "armv6 armv7s armv7 arm64";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;

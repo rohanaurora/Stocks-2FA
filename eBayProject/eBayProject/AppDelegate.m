@@ -18,12 +18,10 @@
     DBSession *dbSession = [[DBSession alloc]
                             initWithAppKey:@"cf5vpwci5b39089"
                             appSecret:@"xbz9e4l10d4k5w7"
-                            root:kDBRootAppFolder]; // either kDBRootAppFolder or kDBRootDropbox
+                            root:kDBRootAppFolder]; // access type
     [DBSession setSharedSession:dbSession];
     
-    
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];   
     
     vc = [[StocksTableViewController alloc] init];
     
