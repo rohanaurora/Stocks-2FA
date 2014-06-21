@@ -16,8 +16,8 @@
 {
     
     DBSession *dbSession = [[DBSession alloc]
-                            initWithAppKey:@"cf5vpwci5b39089"
-                            appSecret:@"xbz9e4l10d4k5w7"
+                            initWithAppKey:@"cf5vpwci5b39089" // app key
+                            appSecret:@"xbz9e4l10d4k5w7" // app secret
                             root:kDBRootAppFolder]; // access type
     [DBSession setSharedSession:dbSession];
     

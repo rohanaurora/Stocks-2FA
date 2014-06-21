@@ -30,7 +30,7 @@
 		BD29AC571954E79F00E3EDB4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29AC491954E35200E3EDB4 /* libsqlite3.0.dylib */; };
 		BD29AC5A1954E8A400E3EDB4 /* userLocation.db in Resources */ = {isa = PBXBuildFile; fileRef = BD29AC591954E8A400E3EDB4 /* userLocation.db */; };
 		BD29AC5D1954EEDD00E3EDB4 /* libCustomStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD29AC5C1954EEDD00E3EDB4 /* libCustomStaticLibrary.a */; };
-		BD41C3101955F33B00FE0F50 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD41C30F1955F33B00FE0F50 /* CoreLocation.framework */; };
+		BD9C62F31955F6460066315B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD41C30F1955F33B00FE0F50 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD41C3101955F33B00FE0F50 /* CoreLocation.framework in Frameworks */,
+				BD9C62F31955F6460066315B /* CoreLocation.framework in Frameworks */,
 				BD29AC571954E79F00E3EDB4 /* libsqlite3.0.dylib in Frameworks */,
 				BD29AC5D1954EEDD00E3EDB4 /* libCustomStaticLibrary.a in Frameworks */,
 				BD29AC551954E76700E3EDB4 /* Security.framework in Frameworks */,
@@ -132,10 +132,10 @@
 		BD29ABD01954D9E100E3EDB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BD41C30F1955F33B00FE0F50 /* CoreLocation.framework */,
 				BD29AC491954E35200E3EDB4 /* libsqlite3.0.dylib */,
 				BD29AC4A1954E35200E3EDB4 /* libsqlite3.dylib */,
 				BD29AC5C1954EEDD00E3EDB4 /* libCustomStaticLibrary.a */,
+				BD41C30F1955F33B00FE0F50 /* CoreLocation.framework */,
 				BD29AC4F1954E44300E3EDB4 /* DropboxSDK.framework */,
 				BD29AC541954E76700E3EDB4 /* Security.framework */,
 				BD29AC521954E75E00E3EDB4 /* QuartzCore.framework */,
@@ -150,16 +150,9 @@
 		BD29ABD71954D9E100E3EDB4 /* eBayProject */ = {
 			isa = PBXGroup;
 			children = (
-				BD29AC411954E28D00E3EDB4 /* CustomStaticLibrary */,
+				BD9C62F41955FBEE0066315B /* Classes */,
 				BD29AC511954E69F00E3EDB4 /* Database */,
-				BD29ABE01954D9E100E3EDB4 /* AppDelegate.h */,
-				BD29ABE11954D9E100E3EDB4 /* AppDelegate.m */,
-				BD29AC001954DA3C00E3EDB4 /* StocksTableViewController.h */,
-				BD29AC011954DA3C00E3EDB4 /* StocksTableViewController.m */,
-				BD29AC031954DB2000E3EDB4 /* StocksTableViewCell.h */,
-				BD29AC041954DB2000E3EDB4 /* StocksTableViewCell.m */,
-				BD29AC061954DB4300E3EDB4 /* Stock.h */,
-				BD29AC071954DB4300E3EDB4 /* Stock.m */,
+				BD29AC411954E28D00E3EDB4 /* CustomStaticLibrary */,
 				BD29ABE31954D9E200E3EDB4 /* Images.xcassets */,
 				BD29ABD81954D9E100E3EDB4 /* Supporting Files */,
 			);
@@ -211,6 +204,21 @@
 				BD29AC471954E2BA00E3EDB4 /* Database.m */,
 			);
 			name = Database;
+			sourceTree = "<group>";
+		};
+		BD9C62F41955FBEE0066315B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BD29ABE11954D9E100E3EDB4 /* AppDelegate.m */,
+				BD29AC001954DA3C00E3EDB4 /* StocksTableViewController.h */,
+				BD29AC011954DA3C00E3EDB4 /* StocksTableViewController.m */,
+				BD29AC031954DB2000E3EDB4 /* StocksTableViewCell.h */,
+				BD29AC041954DB2000E3EDB4 /* StocksTableViewCell.m */,
+				BD29AC061954DB4300E3EDB4 /* Stock.h */,
+				BD29AC071954DB4300E3EDB4 /* Stock.m */,
+				BD29ABE01954D9E100E3EDB4 /* AppDelegate.h */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,7 +454,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "armv6 armv7s armv7 arm64";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -471,6 +479,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
