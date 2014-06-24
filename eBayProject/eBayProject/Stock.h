@@ -17,6 +17,11 @@
 @property (nonatomic, assign) float change;
 @property (nonatomic, assign) float changePercent;
 
-- (instancetype)initWithSymbol:(NSString *) theSymbol updatedAt:(NSDate *)theDate withAPriceOf:(float) thePrice andPreviousClose:(float) thePreviousClose withAChangeOf:(float) theChange andPercentChange:(float) theChangePercent;
+- (instancetype)initWithSymbol:(NSString *)theSymbol
+                     updatedAt:(NSDate *)theDate
+                  withAPriceOf:(float) thePrice
+              andPreviousClose:(float) thePreviousClose
+                 withAChangeOf:(float) theChange
+              andPercentChange:(float) theChangePercent;
 
 @end

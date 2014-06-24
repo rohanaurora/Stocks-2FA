@@ -15,22 +15,26 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    // Start a DropBox Session with appkey and Secret
     DBSession *dbSession = [[DBSession alloc]
                             initWithAppKey:@"cf5vpwci5b39089" // app key
                             appSecret:@"xbz9e4l10d4k5w7" // app secret
                             root:kDBRootAppFolder]; // access type
     [DBSession setSharedSession:dbSession];
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];   
+    //Create Window
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     vc = [[StocksTableViewController alloc] init];
     
+    //Just a simple implementation of Library
     CustomStaticLibrary *customLibrary = [[CustomStaticLibrary alloc] init];
     vc.title = [customLibrary getMeTheTitle];
     
     UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = navigation;
     
+    //Creating a Writable copy of Database
     [self createEditableCopyOfDatabaseIfNeeded];
     
     self.window.backgroundColor = [UIColor whiteColor];

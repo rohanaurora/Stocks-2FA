@@ -10,7 +10,12 @@
 
 @implementation Stock
 
-- (instancetype)initWithSymbol:(NSString *) theSymbol updatedAt:(NSDate *)theDate withAPriceOf:(float) thePrice andPreviousClose:(float) thePreviousClose withAChangeOf:(float) theChange andPercentChange:(float) theChangePercent
+- (instancetype)initWithSymbol:(NSString *) theSymbol
+                     updatedAt:(NSDate *)theDate
+                  withAPriceOf:(float) thePrice
+              andPreviousClose:(float) thePreviousClose
+                 withAChangeOf:(float) theChange
+              andPercentChange:(float) theChangePercent
 {
     self = [super init];
     if (self) {

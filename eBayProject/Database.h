@@ -6,6 +6,10 @@
 //  Copyright (c) 2014 Rohan Aurora. All rights reserved.
 //
 
+//Database Schema
+//sqlite> .schema
+//CREATE TABLE userLocation (stockId INTEGER PRIMARY KEY, stockSymbol text, lastUpdated text, price real, previousClose real, change real, changePercent real, userLatitude real, userLongitude real);
+
 #import <Foundation/Foundation.h>
 #import "sqlite3.h"
 #import "Stock.h"

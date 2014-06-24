@@ -12,4 +12,6 @@
 
 -(NSString *) getMeTheTitle;
 
+//-(BOOL) sendMessage:(NSString *) theMessage withBadge:(int)badge ofSound:(int) sound;
+
 @end

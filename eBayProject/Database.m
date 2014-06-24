@@ -57,6 +57,9 @@ static Database *database;
     
     const char *sql = "INSERT INTO userLocation (stockSymbol, lastUpdated, price, previousClose, change, changePercent, userLatitude, userLongitude) values (?,?,?,?,?,?,?,?)";
     
+//    NSString *theSql = [NSString stringWithFormat:@"INSERT INTO userLocation (stockSymbol, lastUpdated, price, previousClose, change, changePercent, userLatitude, userLongitude) values (%@)",userLatitude];
+//    char sql = [theSql UTF8String];
+    
     sqlite3_stmt *statement;
     if(sqlite3_prepare_v2(database, sql, -1, &statement, NULL) != SQLITE_OK)
     {

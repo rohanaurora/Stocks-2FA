@@ -209,16 +209,48 @@
 		BD9C62F41955FBEE0066315B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BD29ABE11954D9E100E3EDB4 /* AppDelegate.m */,
-				BD29AC001954DA3C00E3EDB4 /* StocksTableViewController.h */,
-				BD29AC011954DA3C00E3EDB4 /* StocksTableViewController.m */,
-				BD29AC031954DB2000E3EDB4 /* StocksTableViewCell.h */,
-				BD29AC041954DB2000E3EDB4 /* StocksTableViewCell.m */,
-				BD29AC061954DB4300E3EDB4 /* Stock.h */,
-				BD29AC071954DB4300E3EDB4 /* Stock.m */,
-				BD29ABE01954D9E100E3EDB4 /* AppDelegate.h */,
+				BD9C63C51959C84B0066315B /* StocksTable */,
+				BD9C63C41959C8430066315B /* Delegate */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		BD9C63C41959C8430066315B /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				BD29ABE11954D9E100E3EDB4 /* AppDelegate.m */,
+				BD29ABE01954D9E100E3EDB4 /* AppDelegate.h */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		BD9C63C51959C84B0066315B /* StocksTable */ = {
+			isa = PBXGroup;
+			children = (
+				BD29AC001954DA3C00E3EDB4 /* StocksTableViewController.h */,
+				BD29AC011954DA3C00E3EDB4 /* StocksTableViewController.m */,
+				BD9C63C71959C85F0066315B /* Model */,
+				BD9C63C61959C8560066315B /* Cell */,
+			);
+			name = StocksTable;
+			sourceTree = "<group>";
+		};
+		BD9C63C61959C8560066315B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BD29AC031954DB2000E3EDB4 /* StocksTableViewCell.h */,
+				BD29AC041954DB2000E3EDB4 /* StocksTableViewCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		BD9C63C71959C85F0066315B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD29AC061954DB4300E3EDB4 /* Stock.h */,
+				BD29AC071954DB4300E3EDB4 /* Stock.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

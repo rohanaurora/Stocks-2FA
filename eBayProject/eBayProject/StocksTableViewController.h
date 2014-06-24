@@ -14,6 +14,7 @@
 #import "Database.h"
 
 @interface StocksTableViewController : UITableViewController <DBRestClientDelegate, CLLocationManagerDelegate> {
+    
     CLLocationManager *clManager;
 }
 

@@ -68,10 +68,13 @@
     stockChangePercent.text = [NSString stringWithFormat:@"(%0.2f)",theStock.changePercent];
     
     if(theStock.change < 0){
+        
         stockPrice.textColor = [UIColor redColor];
         stockChange.textColor = [UIColor redColor];
         stockChangePercent.textColor = [UIColor redColor];
+        
     } else {
+        
         stockPrice.textColor = [UIColor greenColor];
         stockChange.textColor = [UIColor greenColor];
         stockChangePercent.textColor = [UIColor greenColor];
@@ -82,7 +85,6 @@
     
     NSString *dateString = [dateFormatter stringFromDate:theStock.lastUpdated];
     stockDate.text = dateString;
-    
     
 }
 

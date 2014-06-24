@@ -9,6 +9,7 @@
 #import "StocksTableViewController.h"
 
 @interface StocksTableViewController () {
+    
     NSMutableArray *stockObjects;
     float userLatitude;
     float userLongitude;
@@ -109,7 +110,13 @@
             float change = [[theStockDict objectForKey:@"c"] floatValue];
             float changePercent = [[theStockDict objectForKey:@"cp"] floatValue];
             
-            Stock *theStock = [[Stock alloc] initWithSymbol:symbol updatedAt:date withAPriceOf:price andPreviousClose:previousClose withAChangeOf:change andPercentChange:changePercent];
+            Stock *theStock = [[Stock alloc] initWithSymbol:symbol
+                                                  updatedAt:date
+                                               withAPriceOf:price
+                                           andPreviousClose:previousClose
+                                              withAChangeOf:change
+                                           andPercentChange:changePercent];
+            
             [stockObjects addObject:theStock];
         }
         
@@ -123,10 +130,14 @@
 
 -(NSString *) getLocalPath {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-    NSString *cahceDirectory = [paths objectAtIndex:0];
-    return [cahceDirectory stringByAppendingPathComponent:@"stocks.json"];
+    NSString *cacheDirectory = [paths objectAtIndex:0];
+    return [cacheDirectory stringByAppendingPathComponent:@"stocks.json"];
     
 }
+
+
+#pragma mark -
+#pragma mark DBRestClientDelegate Delegate
 
 - (void)restClient:(DBRestClient *)client loadedMetadata:(DBMetadata *)metadata {
     if (metadata.isDirectory) {
@@ -148,6 +159,10 @@ loadMetadataFailedWithError:(NSError *)error {
     NSLog(@"Error loading metadata: %@", error);
 }
 
+#pragma mark -
+#pragma mark CLLocationManagerDelegate Delegate
+
+
 - (void)locationManager:(CLLocationManager *)manager
 	 didUpdateLocations:(NSArray *)locations {
     
@@ -159,6 +174,9 @@ loadMetadataFailedWithError:(NSError *)error {
     [self insertDataIntoDatabase];
     
 }
+
+#pragma mark -
+#pragma mark Database
 
 -(void) insertDataIntoDatabase {
     if([stockObjects count] > 0) {
