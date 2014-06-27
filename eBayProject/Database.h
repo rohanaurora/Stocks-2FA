@@ -7,7 +7,7 @@
 //
 
 //Database Schema
-//sqlite> .schema
+//.schema
 //CREATE TABLE userLocation (stockId INTEGER PRIMARY KEY, stockSymbol text, lastUpdated text, price real, previousClose real, change real, changePercent real, userLatitude real, userLongitude real);
 
 #import <Foundation/Foundation.h>

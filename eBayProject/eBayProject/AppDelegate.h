@@ -11,6 +11,7 @@
 #import "StocksTableViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    
     StocksTableViewController *vc;
 }
 

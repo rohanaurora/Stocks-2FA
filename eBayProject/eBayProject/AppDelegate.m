@@ -15,14 +15,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    // Start a DropBox Session with appkey and Secret
+    // Start a DropBox Session with app key and app secret
     DBSession *dbSession = [[DBSession alloc]
-                            initWithAppKey:@"cf5vpwci5b39089" // app key
-                            appSecret:@"xbz9e4l10d4k5w7" // app secret
-                            root:kDBRootAppFolder]; // access type
+                            initWithAppKey:@"cf5vpwci5b39089"
+                            appSecret:@"xbz9e4l10d4k5w7"
+                            root:kDBRootAppFolder];
     [DBSession setSharedSession:dbSession];
     
-    //Create Window
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     vc = [[StocksTableViewController alloc] init];
@@ -57,6 +56,7 @@
     return NO;
 }
 
+
 - (void)createEditableCopyOfDatabaseIfNeeded
 {
     // First, test for existence.
@@ -68,9 +68,11 @@
     NSString *writableDBPath = [documentsDirectory stringByAppendingPathComponent:@"userLocation.db"];
     success = [fileManager fileExistsAtPath:writableDBPath];
     if (success) return;
+    
     // The writable database does not exist, so copy the default to the appropriate location.
     NSString *defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"userLocation.db"];
     success = [fileManager copyItemAtPath:defaultDBPath toPath:writableDBPath error:&error];
+    
     if (!success) {
         NSAssert1(0, @"Failed to create writable database file with message '%@'.", [error localizedDescription]);
     }

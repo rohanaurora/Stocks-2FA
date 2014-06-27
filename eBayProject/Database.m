@@ -80,12 +80,9 @@ static Database *database;
     sqlite3_bind_double(statement, 8, userLongitude);
     
     
-    
     if(SQLITE_DONE != sqlite3_step(statement))
         NSAssert1(0, @"Error while updating data. '%s'", sqlite3_errmsg(database));
     sqlite3_finalize(statement);
-    
-    
     
 }
 
